@@ -55,7 +55,7 @@ CFLAGS += -DWITH_MENU
 # WITH_ROTARY_COUNT to 5 for getting the best resolution.
 # You can also use two separate push-buttons for Up and Down instead ot the rotary encoder.
 # You must set the WITH_ROTARY_SWITCH to 4 for the UP/DOWN push-buttons.
-#CFLAGS += -DWITH_ROTARY_SWITCH=2
+CFLAGS += -DWITH_ROTARY_SWITCH=2
 # the option CHANGE_ROTARY_DIRECTION changes the rotary direction by swap of switches
 #CFLAGS += -DCHANGE_ROTARY_DIRECTION
 # The best solution for connecting the rotary switch is PD1 and PD3, because this setting can be used
@@ -300,7 +300,7 @@ CFLAGS += -DUSE_EEPROM
 
 # The ANZ_MESS option specifies, how often an ADC value is read and accumulated.
 # Possible values of ANZ_MESS are 5 to 200 .
-CFLAGS += -DANZ_MESS=25
+CFLAGS += -DANZ_MESS=55
 
 
 # The POWER_OFF option enables the power off function, otherwise loop measurements infinitely
@@ -344,7 +344,7 @@ CFLAGS += -DBAT_POOR=3650
 # "DC_Pwr_Mode", where time limits of the additional functions are switched off.
 # The "DC_Pwr_Mode" is also started, if the battery voltage is detected below 0.9V
 # regardless to the state of the DC_PWR option.
-# CFLAGS += -DDC_PWR=9500
+CFLAGS += -DDC_PWR=4500
 
 # Voltage divider for battery voltage measurement  10k / 3.3k = 133/33
 CFLAGS += -DBAT_NUMERATOR=133
